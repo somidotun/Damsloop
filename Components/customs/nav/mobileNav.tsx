@@ -6,6 +6,7 @@ import { useOpenHamburgerMenu } from "@/store/openHamburger";
 import { motion } from "framer-motion";
 
 const MobileNav = () => {
+  // animations
   const variant1 = {
     // initial
     hidden: {
@@ -30,7 +31,8 @@ const MobileNav = () => {
       variants={variant1}
       initial="hidden"
       animate="visible"
-      className=" flex flex-col w-full gap-4"
+      className=" flex flex-col w-full gap-4 fixed top-0 
+       bottom-0"
     >
       <div className="flex justify-end" onClick={toggle}>
         <MdOutlineCancel className=" h-8 w-8" />

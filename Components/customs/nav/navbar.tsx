@@ -6,6 +6,7 @@ import { useOpenHamburgerMenu } from "@/store/openHamburger";
 import MobileNav from "./mobileNav";
 import ThemeToggle from "@/app/theme-toggle";
 import { CiMenuBurger } from "react-icons/ci";
+import Link from "next/link";
 // import
 
 const Navbar = () => {
@@ -20,12 +21,13 @@ const Navbar = () => {
     >
       {/* Logo */}
       <div>
-        <h1
+        <Link
+          href={"/"}
           className="text-2xl md:text-xl font-bold text-transparent bg-clip-text 
-         bg-linear-to-r from-[#974FD7] via-[#D73D91] to-[#F07135]"
+         bg-linear-to-r from-[#974FD7] via-[#D73D91] to-[#F07135] hover:cursor-pointer"
         >
           Damsloop
-        </h1>
+        </Link>
       </div>
 
       {/* navlist */}

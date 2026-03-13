@@ -10,8 +10,8 @@ const Hero = () => {
     <section>
       <div
         className="flex flex-col md:flex-row gap-9 md:gap-5 lg:gap-9 
-         dark:bg-[#0E1115]
-          px-4 pt-14 pb-10 md:px-8 lg:px-12 lg-16"
+         dark:bg-[#0E1115] transition: all 0.3s ease;
+          px-4  md:px-8 lg:px-12 pt-14 pb-10 lg-16"
       >
         {/* text */}
         <div className="md:w-[50%] flex flex-col gap-5">
