@@ -62,9 +62,9 @@ const Hero = () => {
         </div>
 
         {/* image */}
-        <div className="md:w-[50%] relative">
+        <div className="md:w-[50%] ">
           <div
-            className="absolute w-full pt-5 h-80 md:h-108 
+            className="relative w-full pt-5 h-80 md:h-108 
            rounded-2xl shadow-xl dark:shadow-[#231C38]"
           >
             <Image

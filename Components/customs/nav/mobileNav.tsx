@@ -31,7 +31,7 @@ const MobileNav = () => {
       variants={variant1}
       initial="hidden"
       animate="visible"
-      className=" flex flex-col w-full gap-4 "
+      className=" flex flex-col w-full gap-4 overflow-hidden "
     >
       <div className="flex justify-end" onClick={toggle}>
         <MdOutlineCancel className=" h-8 w-8" />
