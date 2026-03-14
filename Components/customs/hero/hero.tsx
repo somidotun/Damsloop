@@ -10,8 +10,8 @@ const Hero = () => {
     <section>
       <div
         className="flex flex-col md:flex-row gap-9 md:gap-5 lg:gap-9 
-         dark:bg-[#0E1115] transition: all 0.3s ease;
-          px-4  md:px-8 lg:px-12 pt-14 pb-10 lg-16"
+         dark:bg-[#0E1115] transition: all 0.3s ease-in-out 
+          px-4  md:px-8 lg:px-12 pt-20 pb-10 lg-16 "
       >
         {/* text */}
         <div className="md:w-[50%] flex flex-col gap-5">
@@ -62,9 +62,9 @@ const Hero = () => {
         </div>
 
         {/* image */}
-        <div className="md:w-[50%]">
+        <div className="md:w-[50%] relative">
           <div
-            className="relative w-full pt-5 h-80 md:h-108 
+            className="absolute w-full pt-5 h-80 md:h-108 
            rounded-2xl shadow-xl dark:shadow-[#231C38]"
           >
             <Image

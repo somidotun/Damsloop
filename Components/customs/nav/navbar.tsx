@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full h-16 flex items-center px-4 py-2 md:px-8
+      className="fixed z-1000 w-full h-16 flex items-center px-4 py-2 md:px-8
       justify-between border-b border-gray-300 
       bg-white dark:dark:bg-[#0E1116] transition-all duration-300"
     >
@@ -61,7 +61,7 @@ const Navbar = () => {
         <div
           className="fixed top-0 pt-8 bottom-0
            h-svh bg-white dark:bg-[#0E1116]
-           left-0 right-0 p-4 shadow-lg z-40"
+           left-0 right-0 p-4 shadow-lg z-40 overflow-hidden"
         >
           {isToggled && <MobileNav />}
         </div>

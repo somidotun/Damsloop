@@ -10,14 +10,14 @@ import LearnProp from "./learnProp";
 const Learn = () => {
   return (
     <section
-      className="flex flex-col items-center gap-7
-     dark:bg-[#111419] py-7 bg-[#f9f9f9cc]"
+      className="flex flex-col items-center gap-7 overflow-hidden
+     dark:bg-[#111419] py-7 bg-[#f9f9f9cc] transition: all 0.3s ease-in-out"
     >
       <h1 className="text-4xl md:text-5xl font-bold">what you will learn</h1>
 
       <div
         className="flex flex-col md:flex-row items-center md:flex-wrap 
-         gap-5 w-full  md:w-[80%]  md:pl-7 lg:pl-24"
+         gap-5 w-full  md:w-[80%] px-3.5 md:pl-7 lg:pl-24"
       >
         {/* braces */}
         <LearnProp
@@ -25,6 +25,7 @@ const Learn = () => {
           alt="braces"
           heading="Python Fundamentals"
           discription="Variables,data types and syntax"
+          delay={0.1}
         />
 
         {/* git */}
@@ -33,6 +34,7 @@ const Learn = () => {
           alt="git"
           heading="Control flow & Loops"
           discription="if statement for/while loops"
+          delay={0.2}
         />
 
         {/* square */}
@@ -41,6 +43,7 @@ const Learn = () => {
           alt="square"
           heading="Functions"
           discription="Reusable code and modularity"
+          delay={0.3}
         />
 
         {/* list */}
@@ -49,6 +52,7 @@ const Learn = () => {
           alt="list"
           heading="Lists & Dictionaries"
           discription="Core data structures"
+          delay={0.4}
         />
 
         {/* file */}
@@ -57,6 +61,7 @@ const Learn = () => {
           alt="file"
           heading="Working with Files"
           discription="Read,write and process files"
+          delay={0.5}
         />
 
         {/* automation */}
@@ -65,13 +70,16 @@ const Learn = () => {
           alt="bot"
           heading="Mini Automation"
           discription="Scripts to automate tasks"
+          delay={0.6}
         />
 
+        {/* globe */}
         <LearnProp
           icon={globe}
           alt="globe"
           heading="Using Simple APIs"
           discription="Fetch and use real-world data"
+          delay={0.7}
         />
       </div>
     </section>
